@@ -40,9 +40,9 @@ export default class App extends Component {
 		);
 
 		const key = this.state.transfer.element.props.name;
-		let stateKey = this.state[key];
-		stateKey = false;
-		this.setState({[key]: stateKey});
+		let itemState = this.state[key];
+		itemState = false;
+		this.setState({[key]: itemState});
 
 		const transfer = this.state.transfer;
 		transfer.parent = parent;
